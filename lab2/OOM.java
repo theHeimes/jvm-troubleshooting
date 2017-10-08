@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class OOM {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         ArrayList a0 = new ArrayList();
         ArrayList a1 = new ArrayList();
         ArrayList a2 = new ArrayList();
@@ -11,6 +11,7 @@ public class OOM {
         String s = "hello";
 
         while (true) {
+            Thread.sleep(100);
             a0.add(new Double(0.0));
             a1.add(new Integer(1));
             a2.add(new String(s));
